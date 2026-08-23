@@ -1,0 +1,3 @@
+/Users/ubbe/Documents/Music_Player/YouTubePlayer/build/CMakeFiles/music_player.dir
+/Users/ubbe/Documents/Music_Player/YouTubePlayer/build/CMakeFiles/edit_cache.dir
+/Users/ubbe/Documents/Music_Player/YouTubePlayer/build/CMakeFiles/rebuild_cache.dir
