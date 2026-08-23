@@ -33,7 +33,7 @@ sudo apt install cmake g++ libncursesw5-dev libcurl4-openssl-dev yt-dlp mpv ffmp
 ## 🔨 Building
 
 ```bash
-cd YouTubePlayer
+cd Music_Player
 mkdir build && cd build
 cmake ..
 make -j$(nproc 2>/dev/null || sysctl -n hw.logicalcpu)
@@ -113,7 +113,7 @@ The application will:
 ## 📁 Project Structure
 
 ```
-YouTubePlayer/
+Music_Player/
 ├── CMakeLists.txt
 ├── README.md
 ├── include/
