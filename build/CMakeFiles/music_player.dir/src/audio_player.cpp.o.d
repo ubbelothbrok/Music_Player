@@ -1,7 +1,7 @@
 CMakeFiles/music_player.dir/src/audio_player.cpp.o: \
-  /Users/ubbe/Documents/Music_Player/YouTubePlayer/src/audio_player.cpp \
-  /Users/ubbe/Documents/Music_Player/YouTubePlayer/include/audio_player.h \
-  /Users/ubbe/Documents/Music_Player/YouTubePlayer/include/youtube_searcher.h \
+  /Users/ubbe/Documents/Music_Player/src/audio_player.cpp \
+  /Users/ubbe/Documents/Music_Player/include/audio_player.h \
+  /Users/ubbe/Documents/Music_Player/include/youtube_searcher.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -798,8 +798,8 @@ CMakeFiles/music_player.dir/src/audio_player.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/wbuffer_convert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/wstring_convert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
-  /Users/ubbe/Documents/Music_Player/YouTubePlayer/include/utils.h \
-  /Users/ubbe/Documents/Music_Player/YouTubePlayer/include/nlohmann/json.hpp \
+  /Users/ubbe/Documents/Music_Player/include/utils.h \
+  /Users/ubbe/Documents/Music_Player/include/nlohmann/json.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/map.h \

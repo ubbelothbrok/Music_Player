@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/ubbe/Documents/Music_Player/YouTubePlayer/include -I/opt/homebrew/opt/ncurses/include
+CXX_INCLUDES = -I/Users/ubbe/Documents/Music_Player/include -I/opt/homebrew/opt/ncurses/include
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Wno-unused-parameter
 

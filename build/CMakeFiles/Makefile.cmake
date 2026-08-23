@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/Users/ubbe/Documents/Music_Player/YouTubePlayer/CMakeLists.txt"
+  "/Users/ubbe/Documents/Music_Player/CMakeLists.txt"
   "CMakeFiles/4.4.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.4.1/CMakeSystem.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCXXCompiler.cmake.in"

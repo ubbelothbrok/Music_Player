@@ -1,7 +1,7 @@
 CMakeFiles/music_player.dir/src/ui.cpp.o: \
-  /Users/ubbe/Documents/Music_Player/YouTubePlayer/src/ui.cpp \
-  /Users/ubbe/Documents/Music_Player/YouTubePlayer/include/ui.h \
-  /Users/ubbe/Documents/Music_Player/YouTubePlayer/include/youtube_searcher.h \
+  /Users/ubbe/Documents/Music_Player/src/ui.cpp \
+  /Users/ubbe/Documents/Music_Player/include/ui.h \
+  /Users/ubbe/Documents/Music_Player/include/youtube_searcher.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -798,13 +798,13 @@ CMakeFiles/music_player.dir/src/ui.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/wbuffer_convert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/wstring_convert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
-  /Users/ubbe/Documents/Music_Player/YouTubePlayer/include/audio_player.h \
-  /Users/ubbe/Documents/Music_Player/YouTubePlayer/include/playlist_manager.h \
+  /Users/ubbe/Documents/Music_Player/include/audio_player.h \
+  /Users/ubbe/Documents/Music_Player/include/playlist_manager.h \
   /opt/homebrew/opt/ncurses/include/ncurses.h \
   /opt/homebrew/opt/ncurses/include/ncursesw/ncurses_dll.h \
   /opt/homebrew/opt/ncurses/include/ncursesw/unctrl.h \
   /opt/homebrew/opt/ncurses/include/ncursesw/curses.h \
-  /Users/ubbe/Documents/Music_Player/YouTubePlayer/include/utils.h \
+  /Users/ubbe/Documents/Music_Player/include/utils.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \

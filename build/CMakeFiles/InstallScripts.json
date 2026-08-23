@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/ubbe/Documents/Music_Player/YouTubePlayer/build/cmake_install.cmake"
+		"/Users/ubbe/Documents/Music_Player/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

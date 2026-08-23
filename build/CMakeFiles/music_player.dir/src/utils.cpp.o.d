@@ -1,6 +1,6 @@
 CMakeFiles/music_player.dir/src/utils.cpp.o: \
-  /Users/ubbe/Documents/Music_Player/YouTubePlayer/src/utils.cpp \
-  /Users/ubbe/Documents/Music_Player/YouTubePlayer/include/utils.h \
+  /Users/ubbe/Documents/Music_Player/src/utils.cpp \
+  /Users/ubbe/Documents/Music_Player/include/utils.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \
