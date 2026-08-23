@@ -21,7 +21,7 @@ enum ColorPairs {
 };
 
 // ── Layout constants ─────────────────────────────────────────────────
-static constexpr int NOW_PLAYING_HEIGHT = 4;
+static constexpr int NOW_PLAYING_HEIGHT = 5;
 static constexpr int STATUS_BAR_HEIGHT  = 3;
 static constexpr int MIN_COLS           = 60;
 static constexpr int MIN_ROWS           = 18;
@@ -85,7 +85,7 @@ void TerminalUI::init() {
         init_pair(CP_TITLE,     COLOR_CYAN,    -1);
         init_pair(CP_PLAYING,   COLOR_GREEN,   -1);
         init_pair(CP_SELECTED,  COLOR_BLACK,   COLOR_CYAN);
-        init_pair(CP_BAR_FILL,  COLOR_BLACK,   COLOR_GREEN);
+        init_pair(CP_BAR_FILL,  COLOR_CYAN,    -1);
         init_pair(CP_BAR_EMPTY, COLOR_WHITE,   -1);
         init_pair(CP_ERROR,     COLOR_RED,     -1);
         init_pair(CP_HINT,      COLOR_YELLOW,  -1);
@@ -437,32 +437,50 @@ void TerminalUI::drawNowPlaying() {
     int w = getmaxx(winNowPlaying_);
 
     // Border
-    wattron(winNowPlaying_, COLOR_PAIR(CP_BORDER));
+    wattron(winNowPlaying_, COLOR_PAIR(CP_ACCENT));
     box(winNowPlaying_, 0, 0);
-    wattroff(winNowPlaying_, COLOR_PAIR(CP_BORDER));
+    wattroff(winNowPlaying_, COLOR_PAIR(CP_ACCENT));
 
     // Title
-    wattron(winNowPlaying_, COLOR_PAIR(CP_TITLE) | A_BOLD);
-    mvwprintw(winNowPlaying_, 0, 2, " Now Playing ");
-    wattroff(winNowPlaying_, COLOR_PAIR(CP_TITLE) | A_BOLD);
+    wattron(winNowPlaying_, COLOR_PAIR(CP_ACCENT) | A_BOLD);
+    mvwprintw(winNowPlaying_, 0, 2, " 🎵 Now Playing ");
+    wattroff(winNowPlaying_, COLOR_PAIR(CP_ACCENT) | A_BOLD);
 
     if (player_.isPlaying() || player_.isPaused()) {
         Song song = player_.getCurrentSong();
         double pos = player_.getPosition();
         double dur = player_.getDuration();
 
-        // Use the song's stored duration if mpv hasn't reported one yet
         if (dur <= 0 && song.duration > 0) dur = song.duration;
+
+        // Equalizer animation logic
+        if (player_.isPlaying()) {
+            eqFrame_++;
+            for (size_t i = 0; i < eqBars_.size(); ++i) {
+                eqBars_[i] = ((eqFrame_ * (i + 1) * 7) % 4) + 1; // 1 to 3
+            }
+        } else {
+            std::fill(eqBars_.begin(), eqBars_.end(), 1);
+        }
+
+        // Draw equalizer bars
+        wattron(winNowPlaying_, COLOR_PAIR(CP_TITLE) | A_BOLD);
+        for (size_t i = 0; i < eqBars_.size(); ++i) {
+            for (int h = 0; h < 3; ++h) {
+                if (h < eqBars_[i]) {
+                    mvwprintw(winNowPlaying_, 3 - h, 2 + i, "█");
+                }
+            }
+        }
+        wattroff(winNowPlaying_, COLOR_PAIR(CP_TITLE) | A_BOLD);
 
         // Song title + artist
         std::string songInfo = song.title;
         if (!song.artist.empty()) songInfo += " — " + song.artist;
-        songInfo = truncate(songInfo, w - 24);
+        songInfo = truncate(songInfo, w - 24 - 12); // -12 for eq offset
 
         wattron(winNowPlaying_, COLOR_PAIR(CP_PLAYING) | A_BOLD);
-        mvwprintw(winNowPlaying_, 1, 2, "%s %s",
-                  player_.isPaused() ? "⏸" : "♫",
-                  songInfo.c_str());
+        mvwprintw(winNowPlaying_, 1, 12, "%s", songInfo.c_str());
         wattroff(winNowPlaying_, COLOR_PAIR(CP_PLAYING) | A_BOLD);
 
         // Time display
@@ -474,30 +492,29 @@ void TerminalUI::drawNowPlaying() {
         wattroff(winNowPlaying_, COLOR_PAIR(CP_DIM));
 
         // Progress bar
-        int barWidth = w - 22;
+        int barWidth = w - 22 - 10; 
         if (barWidth > 10) {
-            drawProgressBar(winNowPlaying_, 2, 2, barWidth, pos, dur);
+            drawProgressBar(winNowPlaying_, 2, 12, barWidth, pos, dur);
         }
 
         // Volume
-        std::string volStr = "Vol:" + std::to_string(player_.getVolume()) + "%";
-        mvwprintw(winNowPlaying_, 2, w - static_cast<int>(volStr.size()) - 5, "%s", volStr.c_str());
+        std::string volStr = "🔊 " + std::to_string(player_.getVolume()) + "%";
+        mvwprintw(winNowPlaying_, 2, w - static_cast<int>(volStr.size()) - 2, "%s", volStr.c_str());
 
         // Play state indicator
-        std::string state = player_.isPaused() ? "[⏸ Paused]" : "[▶ Playing]";
+        std::string state = player_.isPaused() ? "⏸ Paused" : "▶ Playing";
         wattron(winNowPlaying_, COLOR_PAIR(player_.isPaused() ? CP_HINT : CP_PLAYING));
-        mvwprintw(winNowPlaying_, 2, w - static_cast<int>(state.size()) - static_cast<int>(volStr.size()) - 7,
-                  "%s", state.c_str());
+        mvwprintw(winNowPlaying_, 3, 12, "%s", state.c_str());
         wattroff(winNowPlaying_, COLOR_PAIR(player_.isPaused() ? CP_HINT : CP_PLAYING));
+
     } else {
         wattron(winNowPlaying_, COLOR_PAIR(CP_DIM));
-        mvwprintw(winNowPlaying_, 1, 2, "No song playing. Press / to search, then Enter to play.");
+        mvwprintw(winNowPlaying_, 2, 12, "No song playing. Press / to search, then Enter to play.");
         wattroff(winNowPlaying_, COLOR_PAIR(CP_DIM));
 
-        // Draw empty progress bar
-        int barWidth = w - 6;
+        int barWidth = w - 16;
         if (barWidth > 10) {
-            drawProgressBar(winNowPlaying_, 2, 2, barWidth, 0, 0);
+            drawProgressBar(winNowPlaying_, 3, 12, barWidth, 0, 0);
         }
     }
 
@@ -511,10 +528,11 @@ void TerminalUI::drawSearchBox() {
     int w = getmaxx(winSearch_);
     int h = getmaxy(winSearch_);
 
-    // Border
-    wattron(winSearch_, COLOR_PAIR(CP_BORDER));
+    // Border (Highlight if active)
+    int borderColor = (mode_ == InputMode::SEARCH || mode_ == InputMode::SAVE_PROMPT) ? CP_ACCENT : CP_BORDER;
+    wattron(winSearch_, COLOR_PAIR(borderColor));
     box(winSearch_, 0, 0);
-    wattroff(winSearch_, COLOR_PAIR(CP_BORDER));
+    wattroff(winSearch_, COLOR_PAIR(borderColor));
 
     // Title
     wattron(winSearch_, COLOR_PAIR(CP_TITLE) | A_BOLD);
@@ -599,10 +617,11 @@ void TerminalUI::drawResults() {
     int w = getmaxx(winResults_);
     int h = getmaxy(winResults_);
 
-    // Border
-    wattron(winResults_, COLOR_PAIR(CP_BORDER));
+    // Border (Highlight if active)
+    int borderColor = (focusPanel_ == FocusPanel::RESULTS && mode_ == InputMode::NORMAL) ? CP_ACCENT : CP_BORDER;
+    wattron(winResults_, COLOR_PAIR(borderColor));
     box(winResults_, 0, 0);
-    wattroff(winResults_, COLOR_PAIR(CP_BORDER));
+    wattroff(winResults_, COLOR_PAIR(borderColor));
 
     // Title — highlight if focused
     if (focusPanel_ == FocusPanel::RESULTS) {
@@ -697,10 +716,11 @@ void TerminalUI::drawPlaylist() {
     int w = getmaxx(winPlaylist_);
     int h = getmaxy(winPlaylist_);
 
-    // Border
-    wattron(winPlaylist_, COLOR_PAIR(CP_BORDER));
+    // Border (Highlight if active)
+    int borderColor = (focusPanel_ == FocusPanel::PLAYLIST && mode_ == InputMode::NORMAL) ? CP_ACCENT : CP_BORDER;
+    wattron(winPlaylist_, COLOR_PAIR(borderColor));
     box(winPlaylist_, 0, 0);
-    wattroff(winPlaylist_, COLOR_PAIR(CP_BORDER));
+    wattroff(winPlaylist_, COLOR_PAIR(borderColor));
 
     // Title — highlight if focused
     std::string title = " Playlist: " + playlist_.getPlaylistName() +
@@ -906,14 +926,14 @@ void TerminalUI::drawProgressBar(WINDOW* win, int y, int x, int width,
     // Filled portion
     wattron(win, COLOR_PAIR(CP_BAR_FILL));
     for (int i = 0; i < filled; ++i) {
-        waddch(win, ' ');
+        wprintw(win, "█");
     }
     wattroff(win, COLOR_PAIR(CP_BAR_FILL));
 
     // Empty portion
     wattron(win, COLOR_PAIR(CP_BAR_EMPTY) | A_DIM);
     for (int i = filled; i < width; ++i) {
-        waddch(win, ACS_BOARD);
+        wprintw(win, "░");
     }
     wattroff(win, COLOR_PAIR(CP_BAR_EMPTY) | A_DIM);
 }

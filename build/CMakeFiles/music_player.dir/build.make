@@ -76,85 +76,85 @@ CMakeFiles/music_player.dir/src/main.cpp.o: CMakeFiles/music_player.dir/flags.ma
 CMakeFiles/music_player.dir/src/main.cpp.o: /Users/ubbe/Documents/Music_Player/src/main.cpp
 CMakeFiles/music_player.dir/src/main.cpp.o: CMakeFiles/music_player.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ubbe/Documents/Music_Player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/music_player.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/music_player.dir/src/main.cpp.o -MF CMakeFiles/music_player.dir/src/main.cpp.o.d -o CMakeFiles/music_player.dir/src/main.cpp.o -c /Users/ubbe/Documents/Music_Player/src/main.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/music_player.dir/src/main.cpp.o -MF CMakeFiles/music_player.dir/src/main.cpp.o.d -o CMakeFiles/music_player.dir/src/main.cpp.o -c /Users/ubbe/Documents/Music_Player/src/main.cpp
 
 CMakeFiles/music_player.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/music_player.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ubbe/Documents/Music_Player/src/main.cpp > CMakeFiles/music_player.dir/src/main.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ubbe/Documents/Music_Player/src/main.cpp > CMakeFiles/music_player.dir/src/main.cpp.i
 
 CMakeFiles/music_player.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/music_player.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ubbe/Documents/Music_Player/src/main.cpp -o CMakeFiles/music_player.dir/src/main.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ubbe/Documents/Music_Player/src/main.cpp -o CMakeFiles/music_player.dir/src/main.cpp.s
 
 CMakeFiles/music_player.dir/src/utils.cpp.o: CMakeFiles/music_player.dir/flags.make
 CMakeFiles/music_player.dir/src/utils.cpp.o: /Users/ubbe/Documents/Music_Player/src/utils.cpp
 CMakeFiles/music_player.dir/src/utils.cpp.o: CMakeFiles/music_player.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ubbe/Documents/Music_Player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/music_player.dir/src/utils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/music_player.dir/src/utils.cpp.o -MF CMakeFiles/music_player.dir/src/utils.cpp.o.d -o CMakeFiles/music_player.dir/src/utils.cpp.o -c /Users/ubbe/Documents/Music_Player/src/utils.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/music_player.dir/src/utils.cpp.o -MF CMakeFiles/music_player.dir/src/utils.cpp.o.d -o CMakeFiles/music_player.dir/src/utils.cpp.o -c /Users/ubbe/Documents/Music_Player/src/utils.cpp
 
 CMakeFiles/music_player.dir/src/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/music_player.dir/src/utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ubbe/Documents/Music_Player/src/utils.cpp > CMakeFiles/music_player.dir/src/utils.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ubbe/Documents/Music_Player/src/utils.cpp > CMakeFiles/music_player.dir/src/utils.cpp.i
 
 CMakeFiles/music_player.dir/src/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/music_player.dir/src/utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ubbe/Documents/Music_Player/src/utils.cpp -o CMakeFiles/music_player.dir/src/utils.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ubbe/Documents/Music_Player/src/utils.cpp -o CMakeFiles/music_player.dir/src/utils.cpp.s
 
 CMakeFiles/music_player.dir/src/youtube_searcher.cpp.o: CMakeFiles/music_player.dir/flags.make
 CMakeFiles/music_player.dir/src/youtube_searcher.cpp.o: /Users/ubbe/Documents/Music_Player/src/youtube_searcher.cpp
 CMakeFiles/music_player.dir/src/youtube_searcher.cpp.o: CMakeFiles/music_player.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ubbe/Documents/Music_Player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/music_player.dir/src/youtube_searcher.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/music_player.dir/src/youtube_searcher.cpp.o -MF CMakeFiles/music_player.dir/src/youtube_searcher.cpp.o.d -o CMakeFiles/music_player.dir/src/youtube_searcher.cpp.o -c /Users/ubbe/Documents/Music_Player/src/youtube_searcher.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/music_player.dir/src/youtube_searcher.cpp.o -MF CMakeFiles/music_player.dir/src/youtube_searcher.cpp.o.d -o CMakeFiles/music_player.dir/src/youtube_searcher.cpp.o -c /Users/ubbe/Documents/Music_Player/src/youtube_searcher.cpp
 
 CMakeFiles/music_player.dir/src/youtube_searcher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/music_player.dir/src/youtube_searcher.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ubbe/Documents/Music_Player/src/youtube_searcher.cpp > CMakeFiles/music_player.dir/src/youtube_searcher.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ubbe/Documents/Music_Player/src/youtube_searcher.cpp > CMakeFiles/music_player.dir/src/youtube_searcher.cpp.i
 
 CMakeFiles/music_player.dir/src/youtube_searcher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/music_player.dir/src/youtube_searcher.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ubbe/Documents/Music_Player/src/youtube_searcher.cpp -o CMakeFiles/music_player.dir/src/youtube_searcher.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ubbe/Documents/Music_Player/src/youtube_searcher.cpp -o CMakeFiles/music_player.dir/src/youtube_searcher.cpp.s
 
 CMakeFiles/music_player.dir/src/audio_player.cpp.o: CMakeFiles/music_player.dir/flags.make
 CMakeFiles/music_player.dir/src/audio_player.cpp.o: /Users/ubbe/Documents/Music_Player/src/audio_player.cpp
 CMakeFiles/music_player.dir/src/audio_player.cpp.o: CMakeFiles/music_player.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ubbe/Documents/Music_Player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/music_player.dir/src/audio_player.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/music_player.dir/src/audio_player.cpp.o -MF CMakeFiles/music_player.dir/src/audio_player.cpp.o.d -o CMakeFiles/music_player.dir/src/audio_player.cpp.o -c /Users/ubbe/Documents/Music_Player/src/audio_player.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/music_player.dir/src/audio_player.cpp.o -MF CMakeFiles/music_player.dir/src/audio_player.cpp.o.d -o CMakeFiles/music_player.dir/src/audio_player.cpp.o -c /Users/ubbe/Documents/Music_Player/src/audio_player.cpp
 
 CMakeFiles/music_player.dir/src/audio_player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/music_player.dir/src/audio_player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ubbe/Documents/Music_Player/src/audio_player.cpp > CMakeFiles/music_player.dir/src/audio_player.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ubbe/Documents/Music_Player/src/audio_player.cpp > CMakeFiles/music_player.dir/src/audio_player.cpp.i
 
 CMakeFiles/music_player.dir/src/audio_player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/music_player.dir/src/audio_player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ubbe/Documents/Music_Player/src/audio_player.cpp -o CMakeFiles/music_player.dir/src/audio_player.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ubbe/Documents/Music_Player/src/audio_player.cpp -o CMakeFiles/music_player.dir/src/audio_player.cpp.s
 
 CMakeFiles/music_player.dir/src/playlist_manager.cpp.o: CMakeFiles/music_player.dir/flags.make
 CMakeFiles/music_player.dir/src/playlist_manager.cpp.o: /Users/ubbe/Documents/Music_Player/src/playlist_manager.cpp
 CMakeFiles/music_player.dir/src/playlist_manager.cpp.o: CMakeFiles/music_player.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ubbe/Documents/Music_Player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/music_player.dir/src/playlist_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/music_player.dir/src/playlist_manager.cpp.o -MF CMakeFiles/music_player.dir/src/playlist_manager.cpp.o.d -o CMakeFiles/music_player.dir/src/playlist_manager.cpp.o -c /Users/ubbe/Documents/Music_Player/src/playlist_manager.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/music_player.dir/src/playlist_manager.cpp.o -MF CMakeFiles/music_player.dir/src/playlist_manager.cpp.o.d -o CMakeFiles/music_player.dir/src/playlist_manager.cpp.o -c /Users/ubbe/Documents/Music_Player/src/playlist_manager.cpp
 
 CMakeFiles/music_player.dir/src/playlist_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/music_player.dir/src/playlist_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ubbe/Documents/Music_Player/src/playlist_manager.cpp > CMakeFiles/music_player.dir/src/playlist_manager.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ubbe/Documents/Music_Player/src/playlist_manager.cpp > CMakeFiles/music_player.dir/src/playlist_manager.cpp.i
 
 CMakeFiles/music_player.dir/src/playlist_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/music_player.dir/src/playlist_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ubbe/Documents/Music_Player/src/playlist_manager.cpp -o CMakeFiles/music_player.dir/src/playlist_manager.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ubbe/Documents/Music_Player/src/playlist_manager.cpp -o CMakeFiles/music_player.dir/src/playlist_manager.cpp.s
 
 CMakeFiles/music_player.dir/src/ui.cpp.o: CMakeFiles/music_player.dir/flags.make
 CMakeFiles/music_player.dir/src/ui.cpp.o: /Users/ubbe/Documents/Music_Player/src/ui.cpp
 CMakeFiles/music_player.dir/src/ui.cpp.o: CMakeFiles/music_player.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ubbe/Documents/Music_Player/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/music_player.dir/src/ui.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/music_player.dir/src/ui.cpp.o -MF CMakeFiles/music_player.dir/src/ui.cpp.o.d -o CMakeFiles/music_player.dir/src/ui.cpp.o -c /Users/ubbe/Documents/Music_Player/src/ui.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/music_player.dir/src/ui.cpp.o -MF CMakeFiles/music_player.dir/src/ui.cpp.o.d -o CMakeFiles/music_player.dir/src/ui.cpp.o -c /Users/ubbe/Documents/Music_Player/src/ui.cpp
 
 CMakeFiles/music_player.dir/src/ui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/music_player.dir/src/ui.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ubbe/Documents/Music_Player/src/ui.cpp > CMakeFiles/music_player.dir/src/ui.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ubbe/Documents/Music_Player/src/ui.cpp > CMakeFiles/music_player.dir/src/ui.cpp.i
 
 CMakeFiles/music_player.dir/src/ui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/music_player.dir/src/ui.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ubbe/Documents/Music_Player/src/ui.cpp -o CMakeFiles/music_player.dir/src/ui.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ubbe/Documents/Music_Player/src/ui.cpp -o CMakeFiles/music_player.dir/src/ui.cpp.s
 
 # Object files for target music_player
 music_player_OBJECTS = \

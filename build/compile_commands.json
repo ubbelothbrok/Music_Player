@@ -1,37 +1,37 @@
 [
 {
   "directory": "/Users/ubbe/Documents/Music_Player/build",
-  "command": "/usr/bin/c++  -I/Users/ubbe/Documents/Music_Player/include -I/opt/homebrew/opt/ncurses/include -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles/music_player.dir/src/main.cpp.o -c /Users/ubbe/Documents/Music_Player/src/main.cpp",
+  "command": "/usr/bin/clang++  -I/Users/ubbe/Documents/Music_Player/include -I/opt/homebrew/opt/ncurses/include -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles/music_player.dir/src/main.cpp.o -c /Users/ubbe/Documents/Music_Player/src/main.cpp",
   "file": "/Users/ubbe/Documents/Music_Player/src/main.cpp",
   "output": "CMakeFiles/music_player.dir/src/main.cpp.o"
 },
 {
   "directory": "/Users/ubbe/Documents/Music_Player/build",
-  "command": "/usr/bin/c++  -I/Users/ubbe/Documents/Music_Player/include -I/opt/homebrew/opt/ncurses/include -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles/music_player.dir/src/utils.cpp.o -c /Users/ubbe/Documents/Music_Player/src/utils.cpp",
+  "command": "/usr/bin/clang++  -I/Users/ubbe/Documents/Music_Player/include -I/opt/homebrew/opt/ncurses/include -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles/music_player.dir/src/utils.cpp.o -c /Users/ubbe/Documents/Music_Player/src/utils.cpp",
   "file": "/Users/ubbe/Documents/Music_Player/src/utils.cpp",
   "output": "CMakeFiles/music_player.dir/src/utils.cpp.o"
 },
 {
   "directory": "/Users/ubbe/Documents/Music_Player/build",
-  "command": "/usr/bin/c++  -I/Users/ubbe/Documents/Music_Player/include -I/opt/homebrew/opt/ncurses/include -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles/music_player.dir/src/youtube_searcher.cpp.o -c /Users/ubbe/Documents/Music_Player/src/youtube_searcher.cpp",
+  "command": "/usr/bin/clang++  -I/Users/ubbe/Documents/Music_Player/include -I/opt/homebrew/opt/ncurses/include -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles/music_player.dir/src/youtube_searcher.cpp.o -c /Users/ubbe/Documents/Music_Player/src/youtube_searcher.cpp",
   "file": "/Users/ubbe/Documents/Music_Player/src/youtube_searcher.cpp",
   "output": "CMakeFiles/music_player.dir/src/youtube_searcher.cpp.o"
 },
 {
   "directory": "/Users/ubbe/Documents/Music_Player/build",
-  "command": "/usr/bin/c++  -I/Users/ubbe/Documents/Music_Player/include -I/opt/homebrew/opt/ncurses/include -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles/music_player.dir/src/audio_player.cpp.o -c /Users/ubbe/Documents/Music_Player/src/audio_player.cpp",
+  "command": "/usr/bin/clang++  -I/Users/ubbe/Documents/Music_Player/include -I/opt/homebrew/opt/ncurses/include -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles/music_player.dir/src/audio_player.cpp.o -c /Users/ubbe/Documents/Music_Player/src/audio_player.cpp",
   "file": "/Users/ubbe/Documents/Music_Player/src/audio_player.cpp",
   "output": "CMakeFiles/music_player.dir/src/audio_player.cpp.o"
 },
 {
   "directory": "/Users/ubbe/Documents/Music_Player/build",
-  "command": "/usr/bin/c++  -I/Users/ubbe/Documents/Music_Player/include -I/opt/homebrew/opt/ncurses/include -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles/music_player.dir/src/playlist_manager.cpp.o -c /Users/ubbe/Documents/Music_Player/src/playlist_manager.cpp",
+  "command": "/usr/bin/clang++  -I/Users/ubbe/Documents/Music_Player/include -I/opt/homebrew/opt/ncurses/include -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles/music_player.dir/src/playlist_manager.cpp.o -c /Users/ubbe/Documents/Music_Player/src/playlist_manager.cpp",
   "file": "/Users/ubbe/Documents/Music_Player/src/playlist_manager.cpp",
   "output": "CMakeFiles/music_player.dir/src/playlist_manager.cpp.o"
 },
 {
   "directory": "/Users/ubbe/Documents/Music_Player/build",
-  "command": "/usr/bin/c++  -I/Users/ubbe/Documents/Music_Player/include -I/opt/homebrew/opt/ncurses/include -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles/music_player.dir/src/ui.cpp.o -c /Users/ubbe/Documents/Music_Player/src/ui.cpp",
+  "command": "/usr/bin/clang++  -I/Users/ubbe/Documents/Music_Player/include -I/opt/homebrew/opt/ncurses/include -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Wno-unused-parameter -o CMakeFiles/music_player.dir/src/ui.cpp.o -c /Users/ubbe/Documents/Music_Player/src/ui.cpp",
   "file": "/Users/ubbe/Documents/Music_Player/src/ui.cpp",
   "output": "CMakeFiles/music_player.dir/src/ui.cpp.o"
 }

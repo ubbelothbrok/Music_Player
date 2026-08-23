@@ -112,6 +112,10 @@ private:
 
     bool running_;                      ///< Main loop flag
     bool searching_;                    ///< True while a search is in progress
+    
+    // ── UI Visualizer ────────────────────────────────────────────────
+    int eqFrame_ = 0;                   ///< Frame counter for animation
+    std::vector<int> eqBars_{0, 0, 0, 0, 0, 0, 0, 0}; ///< Visualizer bar heights
 
     // ── ncurses windows ──────────────────────────────────────────────
     WINDOW* winNowPlaying_;
